@@ -1,0 +1,100 @@
+<!--Startpage by Tayumpee-->
+<!--facebook.com/yourwaterlord-->
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>ｓｔａｒｔｐａｇｅ</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript">
+			function show( show1 ) {
+			  document.getElementById(show1).style.display="block";
+			}
+			function hide( hide1 ) {
+			  document.getElementById(hide1).style.display="none";
+			}
+			function tog( tog1 ) {
+			  document.getElementById(tog1).style.backgroundColor="#777777";
+			}
+			function toh( toh1 ) {
+			  document.getElementById(toh1).style.backgroundColor="#ffffff";
+			}
+		</script>
+	</head>
+	<body OnLoad="document.form1.q.focus();">	
+        	<div class="maincontainer">
+			<div class="main" id="main1">
+			    <div class="bottomcontainer">
+				    <div class="searchbar">
+					    <form name="form1" action="http://google.com/search" method="get" >
+						    <input type="text" autocomplete="off" placeholder="google search" name="q" class="searchinput"></input>
+					    </form>
+				    </div>
+			    </div>
+			    <div class="time" id="time">
+				    <script>
+					    //document.getElementById("main").innerHTML = Date();
+					    function updateTime() {
+						    var days = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+						    var m = new Date();
+						    var timeString =
+						      ("0" + m.getHours()).slice(-2) + ":" +
+						      ("0" + m.getMinutes()).slice(-2) + ":" +
+						      ("0" + m.getSeconds()).slice(-2);
+						
+						    // set the content of the element with the ID time to the formatted string
+						    document.getElementById('time').innerHTML = timeString;
+
+						    // call this function again in 1000ms
+						    setTimeout(updateTime, 1000);
+					    }
+					    updateTime(); // initial call
+			    	    </script>
+			        </div>  
+			        <div class="date" id="date">
+				    <script>
+					    //document.getElementById("main").innerHTML = Date();
+					    function updateDate() {
+						    var days = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+						    var m = new Date();
+						    var dateString =
+						      (days[ m.getDay() ]) + " " +
+						      ("0" + m.getDate()).slice(-2) + "/" +
+						      ("0" + (m.getMonth()+1)).slice(-2) +"/"+
+						      m.getFullYear();
+						
+						    // set the content of the element with the ID time to the formatted string
+						    document.getElementById('date').innerHTML = dateString;
+
+						    // call this function again in 1000ms
+						    setTimeout(updateDate, 1000);
+					    }
+					    updateDate(); // initial call
+			    	    </script>
+			        </div>  
+				<div class="bookmarkscontainer">
+					<ul>
+						<li><a href="http://wwwin.cisco.com/c/cec/index.html" class="clink">INTRANET</a>	
+						<li><a href="http://wwwin-hrprd.cisco.com/OA_HTML/AppsLogin" class="clink">HRMS</a>
+						<li><a href="http://wwwin.cisco.com/c/cec/employee/pto-payroll/eu/access.html#uk" class="clink">PAYSLIPS</a>
+						<li><a href="https://wwwin-cfnprd.cisco.com/OA_HTML/RF.jsp?function_id=1010649&resp_id=57981&resp_appl_id=200&security_group_id=0&lang_code=US&params=mVMT3M5nLzxcnibXxjWnv4ODB54SM-BIGpWgoBL-QF0&oas=4-9kXby0kQ4epZ-d5luOWQ.." class="clink">EXPENSES</a>
+					</ul>
+					<ul>
+						<li><a href="http://helpzone.cisco.com" class="clink">HELP ZONE<a>
+						<li><a href="http://teamspace.cisco.com/myteam/myteamconsole" class="clink" >TEAMSPACE</a>
+						<li><a href="https://cloudsso.cisco.com/idp/startSSO.ping?PartnerSpId=thomsons&ACSIdx=0" class="clink">i-BENEFITS</a>
+						<li><a href="https://www.friendslifemymoney.co.uk/" class="click">PENSION</a>
+					</ul>
+					<ul>
+						<li><a href="http://www.linkedin.com" class="clink">LINKEDIN</a>
+						<li><a href="http://www.twitter.com" class="clink">TWITTER</a>
+						<li><a href="http://www.github.com" class="clink">GITHUB</a>
+						<li><a href="https://mg.mail.yahoo.com" class="clink">PRIVATE MAIL</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
