@@ -158,7 +158,7 @@ ul {
 	padding:5px;
 	margin-left:5px;
 	margin-right:10px;
-	border: dashed;
+	border: solid;
 	border-width: 2px;
 	border-color: #000000;
 }
